@@ -16,7 +16,7 @@ module.exports = ({ types: t, template }) => {
         const promiseNames = opts.promiseNames
         const catchCallback = opts.catchCallback
 
-        if (typeof catchCallback !== 'string') {
+        if (catchCallback && typeof catchCallback !== 'string') {
           throw new Error('catchCallback must be String')
         }
 
