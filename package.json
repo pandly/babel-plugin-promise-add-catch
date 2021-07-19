@@ -1,11 +1,12 @@
 {
   "name": "babel-plugin-promise-add-catch",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "babel plugin for add catch for promise",
   "main": "lib/index.js",
   "scripts": {
     "build": "rm -rf lib && babel src/index.js -d lib",
     "test": "babel test/index.js -d test/compiled --watch",
+    "patch": "npm --no-git-tag-version version patch",
     "minor": "npm --no-git-tag-version version minor"
   },
   "repository": {
